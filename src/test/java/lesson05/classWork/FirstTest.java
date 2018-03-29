@@ -1,4 +1,4 @@
-package lesson05;
+package lesson05.classWork;
 
 import org.junit.AfterClass;
 import org.junit.Assert;

@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cc411e8-adeb-4ecf-bf79-36bc4b0f058a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson06/a_no_wait_yes/FirstTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson06/b_implicitly_waits/FirstTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson06/c_explicitly_waits/FirstTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson06/c_implicitly_waits_helps_for_firts_appearing/FirstTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson06/e_explicitly_wait_true/FirstTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson06/f_explicit_wait_helps_be_carefull_with_copy_elements/FirstTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/lesson05/FirstTest.class" afterPath="$PROJECT_DIR$/target/test-classes/lesson05/FirstTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/lesson05/FirstTest.java" afterPath="$PROJECT_DIR$/src/test/java/lesson05/classWork/FirstTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testAutomation.iml" afterPath="$PROJECT_DIR$/testAutomation.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -75,23 +67,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/lesson06/f_explicit_wait_helps_be_carefull_with_copy_elements/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="39" column="66" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+            <state relative-caret-position="402">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/FirstTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/classWork/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="41" />
+            <state relative-caret-position="162">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-333">
+              <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2571#2572#0" expanded="true" />
+                <element signature="e#2600#2601#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +135,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/lesson05/FirstTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/lesson06/a_no_wait_yes/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/lesson06/b_implicitly_waits/FirstTest.java" />
@@ -137,6 +142,8 @@
         <option value="$PROJECT_DIR$/src/test/java/lesson06/c_implicitly_waits_helps_for_firts_appearing/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/lesson06/e_explicitly_wait_true/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/lesson06/f_explicit_wait_helps_be_carefull_with_copy_elements/FirstTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lesson05/classWork/FirstTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java" />
       </list>
     </option>
   </component>
@@ -226,34 +233,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson06" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAutomation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson06" type="462c0819:PsiDirectoryNode" />
-              <item name="c_explicitly_waits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAutomation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson06" type="462c0819:PsiDirectoryNode" />
-              <item name="c_implicitly_waits_helps_for_firts_appearing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testAutomation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testAutomation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson06" type="462c0819:PsiDirectoryNode" />
-              <item name="e_explicitly_wait_true" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson05" type="462c0819:PsiDirectoryNode" />
+              <item name="classWork" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -601,7 +582,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/FirstTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/classWork/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
@@ -627,7 +608,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/FirstTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/classWork/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
@@ -655,24 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="242" column="5" lean-forward="true" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,9 +689,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lesson06/f_explicit_wait_helps_be_carefull_with_copy_elements/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="39" column="66" lean-forward="true" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        <state relative-caret-position="402">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/classWork/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333">
+          <caret line="31" column="57" lean-forward="false" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2571#2572#0" expanded="true" />
+            <element signature="e#2600#2601#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
