@@ -42,7 +42,7 @@ public class LoginPageTests {
         loginPage.enterPassword(pass);
         loginPage.clickSignInBtn();
 
-        //Assert.assertThat(accountPage.userAccountName(), containsString(user));
+        Assert.assertThat(accountPage.userAccountName(), containsString(user));
         accountPage.singOut();
     }
 
