@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.CoreMatchers.containsString;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LoginTest {
 
     static WebDriver driver;
