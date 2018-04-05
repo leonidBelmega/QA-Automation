@@ -39,7 +39,7 @@ public class SearchTest {
         driver.findElement(By.id("search_query_top")).sendKeys(s1);
         driver.findElement(By.id("search_query_top")).submit();
 
-        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/h5/a")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/h5/a_custom_condition")).getText(),
                 containsString(s1));
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/div[1]/div[2]/div[2]")).getText(),
                 containsString(s2));

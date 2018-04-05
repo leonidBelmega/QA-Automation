@@ -14,11 +14,11 @@ public class AccountPage {
 
     public WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")
+    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a_custom_condition")
 
     private WebElement signOutButton;
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
+    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a_custom_condition")
 
     private WebElement userAccountName;
 
@@ -28,5 +28,6 @@ public class AccountPage {
 
     public void singOut() {
         signOutButton.click();
+
     }
 }

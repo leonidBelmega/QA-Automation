@@ -14,14 +14,14 @@ import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.CoreMatchers.containsString;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+
 public class LoginTest {
 
     static WebDriver driver;
 
 
     public void returnBackToTheMainPage() {
-        driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a_custom_condition/span")).click();
 
     }
 
@@ -34,7 +34,7 @@ public class LoginTest {
 
         driver.get("http://automationpractice.com");
         driver.manage().window().maximize();
-        driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")).click();
+        driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a_custom_condition")).click();
         driver.findElement(By.xpath("//*[@id=\"email\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("collector.sharing@gmail.com");
         driver.findElement(By.xpath("//*[@id=\"passwd\"]")).click();
@@ -43,17 +43,18 @@ public class LoginTest {
     }
 
 
+
     @Test
     public void login() {
 
-        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")).getText(),
+        Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a_custom_condition")).getText(),
                 containsString("test user"));
     }
 
     @Test
     public void openOrderHistoryAndDetailsPage() {
 
-        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[1]/a/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[1]/a_custom_condition/span")).click();
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/h1")).getText(),
                 containsString("ORDER HISTORY"));
@@ -63,7 +64,7 @@ public class LoginTest {
     @Test
     public void openMyCreditSlipsPage() {
 
-        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[2]/a/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[2]/a_custom_condition/span")).click();
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/h1")).getText(),
                 containsString("CREDIT SLIPS"));
@@ -73,7 +74,7 @@ public class LoginTest {
     @Test
     public void openMyAddressesPage() {
 
-        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[3]/a/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[3]/a_custom_condition/span")).click();
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/h1")).getText(),
                 containsString("MY ADDRESSES"));
@@ -83,7 +84,7 @@ public class LoginTest {
     @Test
     public void openMyPersonalInformationPage() {
 
-        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[4]/a/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/div[1]/ul/li[4]/a_custom_condition/span")).click();
 
         Assert.assertThat(driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/h1")).getText(),
                 containsString("YOUR PERSONAL INFORMATION"));
