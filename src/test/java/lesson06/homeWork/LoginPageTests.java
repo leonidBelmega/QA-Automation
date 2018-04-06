@@ -35,12 +35,12 @@ public class LoginPageTests {
     }
 
     @Test
-    // @Ignore
+
     public void loginViaChainMethods() {
 
-        loginPage.enterUsername(email);
-        loginPage.enterPassword(pass);
-        loginPage.clickSignInBtn();
+        loginPage.enterUsername(email)
+        .enterPassword(pass)
+        .clickSignInBtn();
 
         Assert.assertThat(accountPage.userAccountName(), containsString(user));
         accountPage.singOut();
@@ -54,13 +54,11 @@ public class LoginPageTests {
 
         Assert.assertThat(accountPage.userAccountName(), containsString(user));
         accountPage.singOut();
-
     }
 
     @Test
     public void logOut() {
-        loginPage.logIn(email, pass);
-        accountPage.singOut();
+        loginPage.logIn(email, pass).singOut();
         Assert.assertThat(loginPage.singInText(), containsString(text));
     }
 

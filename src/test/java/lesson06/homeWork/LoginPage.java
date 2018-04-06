@@ -14,7 +14,7 @@ public class LoginPage {
 
     public WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a_custom_condition")
+    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
     private WebElement signInButton;
 
     @FindBy(id = "email")
@@ -26,27 +26,30 @@ public class LoginPage {
     @FindBy(id = "SubmitLogin")
     private WebElement loginButton;
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a_custom_condition")
+    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a")
     private WebElement signOutButton;
 
-    public void enterUsername(String login) {
+    public LoginPage enterUsername(String login) {
         signInButton.click();
         loginField.sendKeys(login);
+        return new LoginPage(driver);
     }
 
-    public void enterPassword(String password) {
+    public LoginPage enterPassword(String password) {
         passwordField.sendKeys(password);
+        return new LoginPage(driver);
     }
 
-    public void clickSignInBtn() {
+    public AccountPage clickSignInBtn() {
         loginButton.click();
+        return new AccountPage(driver);
     }
 
-    public void logIn(String login, String password) {
+    public AccountPage logIn(String login, String password) {
         enterUsername(login);
         enterPassword(password);
         clickSignInBtn();
-        
+        return new AccountPage(driver);
     }
 
     public String singInText() {
