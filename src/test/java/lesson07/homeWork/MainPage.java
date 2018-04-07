@@ -1,28 +1,24 @@
-package lesson07.h;
+package lesson07.homeWork;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 class MainPage extends BasePage implements MainPageLocators {
-
-    private WebDriver driver;
 
     MainPage(WebDriver driver) {
         super(driver);
     }
 
-    @FindBy (xpath="//*[@id='index']/div[2]/")
-            private WebElement adviceList;
-
-    void enterQuery(String query){
+    void enterQuery(String query) {
         $(FIELD_QUERY_LOCATOR).click();
         $(FIELD_QUERY_LOCATOR).clear();
         $(FIELD_QUERY_LOCATOR).sendKeys(query);
     }
 
-    void visit(){
+    void clear() {
+        $(FIELD_QUERY_LOCATOR).clear();
+    }
+
+    void visit() {
         open("http://automationpractice.com/index.php");
     }
 
