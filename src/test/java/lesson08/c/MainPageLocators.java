@@ -1,4 +1,4 @@
-package lessons08.b_logger;
+package lesson08.c;
 
 import org.openqa.selenium.By;
 

@@ -1,4 +1,4 @@
-package lessons08.c;
+package lesson08.b_logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 

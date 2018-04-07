@@ -1,10 +1,8 @@
-package lessons08.c;
+package lesson08.c;
 
 import org.openqa.selenium.WebDriver;
 
 class MainPage extends BasePage implements MainPageLocators {
-
-    private WebDriver driver;
 
     MainPage(WebDriver driver) {
         super(driver);

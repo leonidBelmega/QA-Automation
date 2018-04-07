@@ -1,4 +1,4 @@
-package lessons08.c;
+package lesson08.c;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

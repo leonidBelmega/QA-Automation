@@ -1,4 +1,4 @@
-package lessons08.c;
+package lesson08.a_custom_condition;
 
 import org.openqa.selenium.By;
 
