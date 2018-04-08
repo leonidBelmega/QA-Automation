@@ -1,4 +1,4 @@
-package lesson08.c;
+package lesson08.homeWork;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +25,9 @@ public abstract class SimpleAPI {
     }
 
     protected WebElement $(String xpath){
+        return $(By.xpath(xpath));
+    }
+    protected WebElement $1(String xpath){
         return $(By.xpath(xpath));
     }
 

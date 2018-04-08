@@ -6,47 +6,33 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AccountPage {
+public class AccountPage extends BasePage implements AccountPageLocators{
 
-    public AccountPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    private WebDriver driver;
+
+    AccountPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebDriver driver;
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
-    private WebElement signInButton;
-
-    @FindBy(id = "email")
-    private WebElement loginField;
-
-    @FindBy(id = "passwd")
-    private WebElement passwordField;
-
-    @FindBy(id = "SubmitLogin")
-    private WebElement loginButton;
 
 
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
-
-    private WebElement userAccountName;
     public LoginPage enterUsername(String login) {
-        signInButton.click();
-        loginField.sendKeys(login);
+        $(SIGN_IN_BUTTON).click();
+        $(LOGIN_FIELD).sendKeys(login);
         return new LoginPage(driver);
     }
 
     public LoginPage enterPassword(String password) {
-        passwordField.sendKeys(password);
+        $(PASSWORD_FIELD).sendKeys(password);
         return new LoginPage(driver);
     }
 
     public void clickSignInBtn() {
-        loginButton.click();
+        $(LOGIN_BUTTON).click();
     }
 
     public String userAccountName() {
-        return userAccountName.getText();
+        return $(USER_ACCOUNT_NAME).getText();
     }
 
 }

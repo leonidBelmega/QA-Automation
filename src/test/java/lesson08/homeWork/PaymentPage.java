@@ -7,49 +7,31 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class PaymentPage {
-    private static final org.apache.logging.log4j.Logger LOG = LogManager.getLogger(PaymentPage.class);
+public class PaymentPage extends BasePage implements PaymentPageLocators{
 
-    public PaymentPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    private WebDriver driver;
+    PaymentPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"total_price\"]")
-    private WebElement total;
-
-    @FindBy(xpath = "//*[@id=\"HOOK_PAYMENT\"]/div[2]/div/p/a")
-    private WebElement hookPayment;
-
-    @FindBy(xpath = "//*[@id=\"center_column\"]/form/div/p[2]")
-    private WebElement paymentCheck;
-
-    @FindBy(xpath = "//*[@id=\"cart_navigation\"]/button/span")
-    private WebElement iConfirmMyOrder;
-
-    @FindBy(xpath = "//*[@id=\"center_column\"]/div")
-    private WebElement finalConfirm;
-
-    String total(){ return total.getText();}
+    String total(){ return $(TOTAL).getText();}
 
     String paymentCheck(){
-        return paymentCheck.getText();
+        return $(PAYMENT_CHECK).getText();
     }
+
     String finalConfirm(){
-        return finalConfirm.getText();
+        return $(FINAL_CONFIRM).getText();
     }
 
     void confirmMyOrder(){
-        iConfirmMyOrder.click();
+        $(I_CONFIRM_MY_ORDER).click();
     }
 
     void hookPayment(){
-        hookPayment.click();
+        $(HOOK_PAYMENT).click();
     }
-
-
 
     }
 

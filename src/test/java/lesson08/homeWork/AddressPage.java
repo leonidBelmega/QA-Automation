@@ -1,33 +1,28 @@
 package lesson08.homeWork;
 
 
+import lesson07.homeWork.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class AddressPage {
+public class AddressPage extends BasePage implements AddressPageLocators {
 
-    public AddressPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    private WebDriver driver;
+
+    AddressPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebDriver driver;
-
-    @FindBy(xpath = "//*[@id=\"center_column\"]/form/p/button/span")
-    private WebElement proceedToCheckout;
-
-    @FindBy(xpath = "//*[@id=\"address_delivery\"]/li[2]")
-    private WebElement addressFirstName;
 
     String firstName(){
-        return addressFirstName.getText();
+        return $(ADDRESS_FIRST_NAME).getText();
     }
 
     void proceedToCheckOut(){
-    proceedToCheckout.click();
+    $(PROCEED_TO_CHECKOUT).click();
      }
     }
 

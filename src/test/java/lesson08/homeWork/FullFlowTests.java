@@ -3,38 +3,15 @@ package lesson08.homeWork;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.junit.AfterClass;
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
 import static org.hamcrest.CoreMatchers.containsString;
 
 
-public class FullFlowTests {
+public class FullFlowTests extends BaseTest {
     private static final Logger LOG = LogManager.getLogger(FullFlowTests.class);
-    static WebDriver driver;
-    public static MainPage loginPage;
-    public static AccountPage accountPage;
-
-    @BeforeClass
-    public static void setUp() {
-        driver = new ChromeDriver();
-        loginPage = new MainPage(driver);
-        accountPage = new AccountPage(driver);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
-
-        driver.get("http://automationpractice.com");
-        driver.manage().window().maximize();
-    }
 
     @Test
 
@@ -52,9 +29,16 @@ public class FullFlowTests {
         AddressPage addressPage = new AddressPage(driver);
         ShippingPage shippingPage = new ShippingPage(driver);
         PaymentPage paymentPage = new PaymentPage(driver);
+        AccountPage accountPage = new AccountPage(driver);
 
+        mainPage.visit();
         LOG.info("Sing In");
-        accountPage.enterUsername(email).enterPassword(pass).clickSignInBtn();
+        mainPage.enterUsername(email);
+        System.out.println(11111);
+                mainPage.enterPassword(pass);
+        System.out.println(222);
+                mainPage.clickSignInBtn();
+
         LOG.info("Start search");
         mainPage.enterQuery(query1);
         LOG.info("select search result");
@@ -75,7 +59,8 @@ public class FullFlowTests {
         addressPage.proceedToCheckOut();
 
         LOG.info("proceed to checkout");
-        shippingPage.setAgrementCheckbox().setProceedToCheckout();
+        shippingPage.clickAgrementCheckbox();
+        shippingPage.setProceedToCheckout();
 
         Assert.assertThat(paymentPage.total(), containsString(total));
         LOG.info("select payment");
@@ -93,10 +78,5 @@ public class FullFlowTests {
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
             System.setProperty("report.path", "./reports/IDE-test-build-" + format.format(dateNow));
         }
-    }
-
-    @AfterClass
-    public static void tearDown() {
-        driver.quit();
     }
 }

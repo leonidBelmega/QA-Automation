@@ -7,29 +7,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class OrderPage {
+public class OrderPage extends  BasePage implements OrderPageLocators{
 
+    private WebDriver driver;
 
-    public OrderPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+    OrderPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebDriver driver;
 
-    @FindBy(xpath = "//*[@id=\"total_price\"]")
-    private WebElement totalprice;
-
-    @FindBy(xpath = "//*[@id=\"center_column\"]/p[2]/a[1]/span")
-    private WebElement proceedToCheckout;
-
-void proceedToCheckOut(){
-    proceedToCheckout.click();
+    void proceedToCheckOut(){
+    $(PROCEED_TO_CHECKOUT).click();
 }
-    String totalPrice(){
-       return totalprice.getText();
-    }
 
+    String totalPrice(){
+       return $(TOTAL_PRICE).getText();
+    }
 
     }
 

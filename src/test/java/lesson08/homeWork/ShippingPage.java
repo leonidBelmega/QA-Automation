@@ -1,41 +1,40 @@
 package lesson08.homeWork;
 
 import org.apache.logging.log4j.LogManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class ShippingPage {
-    private static final org.apache.logging.log4j.Logger LOG = LogManager.getLogger(ShippingPage.class);
+public class ShippingPage extends BasePage implements ShippingPageLocators{protected WebElement $(String xpath){
+    return $(By.xpath(xpath));
+}
 
-    public ShippingPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+
+    private WebDriver driver;
+
+    ShippingPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebDriver driver;
-
     @FindBy(xpath = "//*[@id=\"cgv\"]")
-    private WebElement agrementCheckbox;
+    private WebElement agreementCheckbox;
 
     @FindBy(xpath = "//*[@id=\"form\"]/p/button/span")
     private WebElement proceedToCheckout;
+    ShippingPage clickAgrementCheckbox() {
+        agreementCheckbox.click();
+        return new ShippingPage(driver);
+    }
 
-
-    ShippingPage setAgrementCheckbox(){
-    agrementCheckbox.click();
-            return new ShippingPage(driver);
-}
-
-    void setProceedToCheckout(){
+    void setProceedToCheckout() {
         proceedToCheckout.click();
     }
 
 
-
-    }
+}
 
 
 

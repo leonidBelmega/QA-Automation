@@ -6,61 +6,43 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainPage {
+public class MainPage extends BasePage implements MainPageLocators{
 
-    public MainPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-        this.driver = driver;
+
+    private WebDriver driver;
+
+    MainPage(WebDriver driver) {
+        super(driver);
     }
 
-    public WebDriver driver;
-
-    @FindBy(xpath = "//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
-    private WebElement signInButton;
-
-    @FindBy(id = "email")
-    private WebElement loginField;
-
-    @FindBy(id = "passwd")
-    private WebElement passwordField;
-
-    @FindBy(id = "SubmitLogin")
-    private WebElement loginButton;
-
-    @FindBy (id = "search_query_top")
-    private WebElement fieldQuery;
-
-    @FindBy (xpath = "//*[@id=\"searchbox\"]/button")
-    private WebElement searchBoxButton;
-    @FindBy (xpath = "//*[@id=\"best-sellers_block_right\"]/div/ul/li[5]/div/h5")
-    private  WebElement searchResult;
-
-
     void selectSearchResult(){
-        searchResult.click();
+        $(SEARCH_RESULT).click();
     }
 
     void enterQuery(String query) {
-        fieldQuery.click();
-        fieldQuery.clear();
-       fieldQuery.sendKeys(query);
-       searchBoxButton.click();
+        $(FIELD_QUERY).click();
+        $(FIELD_QUERY).clear();
+        $(FIELD_QUERY).sendKeys(query);
+       $(SEARCH_BUTTON).click();
+    }
 
+    void visit(){
+        open("http://automationpractice.com/index.php");
     }
 
     public MainPage enterUsername(String login) {
-        signInButton.click();
-        loginField.sendKeys(login);
+        $(SING_IN_BUTTON).click();
+        $(LOGIN_FIELD).sendKeys(login);
         return new MainPage(driver);
     }
 
     public MainPage enterPassword(String password) {
-        passwordField.sendKeys(password);
+        $(PASSWORD_FIELD).sendKeys(password);
         return new MainPage(driver);
     }
 
     public AccountPage clickSignInBtn() {
-        loginButton.click();
+        $(LOGIN_BUTTON).click();
         return new AccountPage(driver);
     }
 

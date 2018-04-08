@@ -1,8 +1,10 @@
-package lesson08.c;
+package lesson08.homeWork;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public interface MainPageLocators {
-    By ADVICE_LOCATOR = By.xpath("//*[@id='index']/div[2]/ul/li");
-    By FIELD_QUERY_LOCATOR = By.id("search_query_top");
+public interface AddressPageLocators {
+    By PROCEED_TO_CHECKOUT = By.xpath("//*[@id=\"center_column\"]/form/p/button/span");
+    By ADDRESS_FIRST_NAME = By.xpath("//*[@id=\"address_delivery\"]/li[2]");
 }
