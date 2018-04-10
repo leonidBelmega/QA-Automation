@@ -8,10 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class ShippingPage extends BasePage implements ShippingPageLocators{protected WebElement $(String xpath){
-    return $(By.xpath(xpath));
-}
-
+public class ShippingPage extends BasePage implements ShippingPageLocators{
 
     private WebDriver driver;
 
@@ -19,13 +16,11 @@ public class ShippingPage extends BasePage implements ShippingPageLocators{prote
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@id=\"cgv\"]")
-    private WebElement agreementCheckbox;
-
     @FindBy(xpath = "//*[@id=\"form\"]/p/button/span")
     private WebElement proceedToCheckout;
+
     ShippingPage clickAgrementCheckbox() {
-        agreementCheckbox.click();
+        $(AGREEMENT_CHECKBOX).click();
         return new ShippingPage(driver);
     }
 
