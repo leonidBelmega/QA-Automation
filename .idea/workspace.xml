@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbcc9e4b-479f-4617-8b20-d47d3be84625" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/b/MainPageLocators.java" afterPath="$PROJECT_DIR$/src/test/java/lesson09/b/MainPageLocators.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/homework/CustomExpectedCondition.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/qwerty.txt" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,8 +40,8 @@
       <file leaf-file-name="TextLinkInIframeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="260">
+              <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -213,23 +214,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QA-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson05" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QA-Automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QA-Automation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson05" type="462c0819:PsiDirectoryNode" />
-              <item name="homeWork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QA-Automation" type="b2602c69:ProjectViewProjectNode" />
@@ -525,9 +509,6 @@
     <history-entry file="TextLinkInIframeTest - 2018.04.15 at 14h 31m 54s.xml">
       <configuration name="TextLinkInIframeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 28m 18s.xml">
-      <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 32m 40s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
@@ -550,6 +531,9 @@
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 45m 54s.xml">
+      <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 55m 28s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -860,6 +844,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -902,14 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="0" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/b/CustomExpectedCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -962,10 +939,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/b/CustomExpectedCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="260">
+          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding />
         </state>
       </provider>
