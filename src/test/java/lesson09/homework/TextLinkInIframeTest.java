@@ -26,7 +26,7 @@ public class TextLinkInIframeTest extends BaseTest {
     MainPage mainPage = new MainPage(driver);
 
     @Test
-    public void IframeLinkText() throws InterruptedException {
+    public void IframeLinkText(){
         String title = "PrestaShop";
         String likes = "108,906 likes";
         mainPage.visit();
