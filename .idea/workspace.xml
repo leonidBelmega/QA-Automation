@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbcc9e4b-479f-4617-8b20-d47d3be84625" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/BasePage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/BaseTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/CustomExpectedCondition.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/LoginPage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/MainPage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/MainPageLocators.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/SimpleAPI.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/automationpractice.com.iml" afterPath="$PROJECT_DIR$/automationpractice.com.iml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/b/FirstTest.java" afterPath="$PROJECT_DIR$/src/test/java/lesson09/b/FirstTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/b/MainPageLocators.java" afterPath="$PROJECT_DIR$/src/test/java/lesson09/b/MainPageLocators.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java" afterPath="$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,7 +19,7 @@
       <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/b/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="0">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
@@ -49,8 +39,18 @@
       <file leaf-file-name="TextLinkInIframeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+            <state relative-caret-position="311">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimpleAPI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/SimpleAPI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -115,16 +115,6 @@
                 <element signature="e#301#302#0" expanded="true" />
                 <element signature="e#406#407#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/lesson05/homeWork/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="50" selection-end-column="45" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -605,39 +595,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 28m 36s.xml">
+    <history-entry file="TextLinkInIframeTest - 2018.04.15 at 14h 31m 54s.xml">
+      <configuration name="TextLinkInIframeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 28m 18s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 31m 33s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 32m 40s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 35m 00s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 35m 18s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 39m 01s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 36m 02s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 40m 35s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 37m 22s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 41m 52s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 38m 07s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 48m 27s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 42m 39s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 49m 31s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 44m 10s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 50m 20s.xml">
-      <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 09h 52m 54s.xml">
+    <history-entry file="TextLinkInIframeTest_IframeLinkText - 2018.04.15 at 14h 45m 54s.xml">
       <configuration name="TextLinkInIframeTest.IframeLinkText" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -646,7 +637,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -673,13 +664,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson08/homeWork/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lesson08/c/MainPageLocators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -901,6 +885,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -922,6 +909,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,6 +917,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="42" column="76" lean-forward="false" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,13 +941,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/SimpleAPI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1015,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/b/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="0">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
@@ -1037,10 +1019,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.8.1/selenium-api-3.8.1.jar!/org/openqa/selenium/WebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/SimpleAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/lesson09/homework/TextLinkInIframeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="39" column="29" lean-forward="false" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        <state relative-caret-position="311">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
       </provider>

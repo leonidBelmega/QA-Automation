@@ -23,23 +23,26 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.titleContains;
 public class TextLinkInIframeTest extends BaseTest {
     private static final Logger LOG = LogManager.getLogger(TextLinkInIframeTest.class);
 
-MainPage mainPage = new MainPage(driver);
+    MainPage mainPage = new MainPage(driver);
+
     @Test
-    public void IframeLinkText(){
-
+    public void IframeLinkText() throws InterruptedException {
+        String title = "PrestaShop";
+        String likes = "108,906 likes";
         mainPage.visit();
-
 
         WebElement element = driver.findElement(By.xpath("/html/body/div/div[2]/div/div[2]/div/div[2]/div[3]/div/div/span/iframe"));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        ((JavascriptExecutor) driver).executeScript("document.querySelector('body').scrollTop-=100;");
-
+        LOG.info("switch to iFrame");
         driver.switchTo().frame(element);
-        WebElement element1 = driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div/div[1]/div/div[2]/div[2]/div[1]/a"));
-         String st = element1.getCssValue("title");
-        System.out.println(st);
-        assertThat(ExpectedConditions.titleContains("idfhdfbviuhvsibvsibrvo"));
 
+        WebElement elementInIframe = driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div/div[1]/div/div[2]/div[2]/div[1]/a"));
+        Assert.assertThat(elementInIframe.getText(), containsString(title));
+
+        WebElement numberOfLikes = driver.findElement(By.xpath("/html/body/div/div/div/div[1]/div/div[1]/div/div[2]/div[2]/div[2]"));
+        Assert.assertThat(numberOfLikes.getText(), containsString(likes));
+
+        driver.switchTo().parentFrame();
     }
 
     static {
