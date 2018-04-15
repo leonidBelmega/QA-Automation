@@ -40,7 +40,7 @@ driver.navigate().refresh();
         assertThat(titleContains("My account"));
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebElement element = (WebElement) js.executeScript("return JQuery")
+        WebElement element = (WebElement) js.executeScript("return JQuery");
     }
 
     static {
