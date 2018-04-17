@@ -18,9 +18,7 @@ public class CustomExpectedConditions {
     }
 
     public static ExpectedCondition<Boolean> pageIsLoaded(String title, String url) {
-        return driver -> {
-           return driver.getCurrentUrl().equals(url) && driver.getTitle().contains(title);
-          };
+        return driver -> driver.getCurrentUrl().equals(url) && driver.getTitle().contains(title);
     }
 
     public static ExpectedCondition<Boolean> statelessOfElement(By locator) {
