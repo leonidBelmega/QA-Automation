@@ -12,24 +12,23 @@ public class CustomExpectedConditions {
     public static ExpectedCondition<Boolean> listNthElementHasText(By locator, int NthElement, String text) {
         return driver -> {
             List<WebElement> list = driver.findElements(locator);
-            System.out.println(list.get(NthElement).getText());
+            return list.get(NthElement).getText().equals(text);
+           };
 
-            return  list.get(NthElement).getText().equals(text);
-        };
     }
 
     public static ExpectedCondition<Boolean> pageIsLoaded(String title, String url) {
-        return driver -> (driver.getCurrentUrl().equals(url) && driver.getTitle().equals(title));
+        return driver -> {
+           return driver.getCurrentUrl().equals(url) && driver.getTitle().contains(title);
+          };
     }
 
     public static ExpectedCondition<Boolean> statelessOfElement(By locator) {
         return driver -> {
             List<WebElement> list = driver.findElements(locator);
-            return  list.isEmpty();
-        };
-
+            return list.isEmpty();
+          };
     }
-
 }
 
 

@@ -1,3 +1,0 @@
-span/ancestor::div[@class='cat']
-
-interaction

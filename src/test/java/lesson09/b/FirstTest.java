@@ -41,7 +41,6 @@ driver.navigate().refresh();
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement element = (WebElement) js.executeScript("return JQuery");
-                driver.manage().timeouts();
     }
 
     static {
