@@ -14,27 +14,18 @@ public class CustomExpectedConditions {
             List<WebElement> list = driver.findElements(locator);
             System.out.println(list.get(NthElement).getText());
 
-            if (list.get(NthElement).getText().equals(text))
-                return true;
-            else return false;
+            return  list.get(NthElement).getText().equals(text);
         };
-
     }
 
     public static ExpectedCondition<Boolean> pageIsLoaded(String title, String url) {
-        return driver -> {
-            if (driver.getCurrentUrl().equals(url) && driver.getTitle().equals(title))
-                return true;
-            return null;
-        };
+        return driver -> (driver.getCurrentUrl().equals(url) && driver.getTitle().equals(title));
     }
 
     public static ExpectedCondition<Boolean> statelessOfElement(By locator) {
         return driver -> {
             List<WebElement> list = driver.findElements(locator);
-            if (list.isEmpty())
-                return true;
-            else return false;
+            return  list.isEmpty();
         };
 
     }
